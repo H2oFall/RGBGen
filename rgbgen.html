@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1 id="red"></h1>
+    <h1 id="green"></h1>
+    <h1 id="blue"></h1>
+    <button onclick="doStuff()">Do stuff</button>
+    
+    <script>
+      function doStuff(){
+        var r = Math.floor(Math.random()*256);
+        document.getElementById('red').innerHTML = r;
+        var g = Math.floor(Math.random()*256);
+        document.getElementById('green').innerHTML = g;
+        var b = Math.floor(Math.random()*256);
+        document.getElementById('blue').innerHTML = b;
+        document.body.style.backgroundColor = (r,g,b);
+      }
+    </script>
+  </body>
+</html>
